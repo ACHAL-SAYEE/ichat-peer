@@ -13,7 +13,7 @@ peerApp.get("/",async=(req,res)=>{
     res.send("fucking happily")
 })
 // Start the Express server
-const PORT =  process.env.PORT || 3009;
+const PORT =  process.env.PORT ;
 peerServer.listen(PORT, () => {
   console.log(`Peer server listening on port ${PORT}`);
 });
