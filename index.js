@@ -1,3 +1,4 @@
+require("dotenv").config();
 var ExpressPeerServer = require('peer').ExpressPeerServer;
 var peerExpress = require('express');
 var peerApp = peerExpress();
@@ -12,7 +13,7 @@ peerApp.get("/",async=(req,res)=>{
     res.send("fucking happily")
 })
 // Start the Express server
-const PORT = 3009;
+const PORT =  process.env.PORT || 3009;
 peerServer.listen(PORT, () => {
   console.log(`Peer server listening on port ${PORT}`);
 });
