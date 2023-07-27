@@ -7,5 +7,8 @@
     "start": "peerjs --port 3009 --key peerjs --path /peerjs"
   },
   "author": "achal",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "peer": "^1.0.0"
+  }
 }
