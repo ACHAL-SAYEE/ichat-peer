@@ -8,7 +8,9 @@ peerApp.use(cors());
 
 peerApp.use('/peerjs', ExpressPeerServer(peerServer, options));
 // Mount the Peer server as middleware
-
+peerApp.get("/",async=(req,res)=>{
+    res.send("fucking happily")
+})
 // Start the Express server
 const PORT = 3009;
 peerServer.listen(PORT, () => {
